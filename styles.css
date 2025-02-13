@@ -34,9 +34,9 @@ body {
 
 .template1::before {
     content: "🎉🌈✨";
-    font-size: 5rem;
+    font-size: 3rem;
     position: absolute;
-    top: -40px;
+    top: -25px;
     left: 10px;
     opacity: 0.8;
     animation: floatIcon 3s ease-in-out infinite;
@@ -44,9 +44,9 @@ body {
 
 .template1::after {
     content: "💖🌟🎶";
-    font-size: 5rem;
+    font-size: 3rem;
     position: absolute;
-    bottom: -40px;
+    bottom: -25px;
     right: 10px;
     opacity: 0.8;
     animation: floatIcon 3s ease-in-out infinite reverse;
@@ -90,7 +90,7 @@ body {
     content: "✨🌟💎";
     font-size: 3rem;
     position: absolute;
-    top: -30px;
+    top: -25px;
     left: 10px;
     opacity: 0.8;
     animation: floatIcon 2s ease-in-out infinite;
@@ -100,7 +100,7 @@ body {
     content: "🌸💫💖";
     font-size: 3rem;
     position: absolute;
-    bottom: -30px;
+    bottom: -25px;
     right: 10px;
     opacity: 0.8;
     animation: floatIcon 2s ease-in-out infinite reverse;
@@ -135,7 +135,7 @@ body {
 /* For Tablets and Smaller Devices */
 @media (max-width: 768px) {
     .template1, .template2 {
-        padding: 20px;
+        padding: 15px;
         width: 90%;
         max-width: 350px;
     }
@@ -144,9 +144,9 @@ body {
     .template1::after,
     .template2::before,
     .template2::after {
-        font-size: 3rem;
-        top: -25px;
-        bottom: -25px;
+        font-size: 2.5rem;
+        top: -20px;
+        bottom: -20px;
     }
 
     .template1::before {
@@ -169,18 +169,18 @@ body {
 /* For Mobile Phones */
 @media (max-width: 480px) {
     .template1, .template2 {
-        padding: 15px;
+        padding: 12px;
         width: 100%;
-        max-width: 320px;
+        max-width: 300px;
     }
 
     .template1::before,
     .template1::after,
     .template2::before,
     .template2::after {
-        font-size: 2.5rem;
-        top: -20px;
-        bottom: -20px;
+        font-size: 2rem;
+        top: -15px;
+        bottom: -15px;
     }
 
     .template1::before {
@@ -192,10 +192,10 @@ body {
     }
 
     .template2::before {
-        left: 5px;
+        left: 0;
     }
 
     .template2::after {
-        right: 5px;
+        right: 0;
     }
 }
