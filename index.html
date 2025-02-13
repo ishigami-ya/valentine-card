@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Card Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Create Your Valentine’s Day Card</h1>
+        </header>
+        
+        <main>
+            <div class="form-container">
+                <label for="title">Card Title</label>
+                <input type="text" id="title" placeholder="e.g. Happy Valentine's Day!">
+
+                <label for="image">Upload a picture of you together</label>
+                <input type="file" id="image" accept="image/*">
+
+                <label for="message">write your brief and wholesome message here:</label>
+                <textarea id="message" placeholder="Write your heartfelt message here..."></textarea>
+
+                <label for="template">Choose a Template</label>
+                <div class="template-selector">
+                    <label>
+                        <input type="radio" name="template" value="template1" checked> Classic Romantic
+                    </label>
+                    <label>
+                        <input type="radio" name="template" value="template2"> Modern Minimalist
+                    </label>
+                    <label>
+                        <input type="radio" name="template" value="template3"> Playful Fun
+                    </label>
+                </div>
+
+                <button onclick="generateCard()">Generate Card</button>
+            </div>
+
+            <div id="generatedCard" class="card-preview">
+                <h2 id="cardTitle"></h2>
+                <img id="cardImage" src="" alt="Uploaded image">
+                <p id="cardMessage"></p>
+            </div>
+            <p id="screenshotMessage" class="screenshot-message"><span class="text">Your card is ready! Screenshot and send it to your crush!<br><br> Created by <a href="https://www.instagram.com/ishigami__ya/">Ishigami</a></span></p>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
